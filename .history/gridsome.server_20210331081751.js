@@ -9,7 +9,28 @@ const axios = require('axios')
 module.exports = function (api) {
   api.loadSource(async ({ addCollection }) => {
     const posts = addCollection('Post')
-    
+    const tags = addCollection('Tag')
+
+    posts.addReference('tags', 'Tag')
+
+    tags.addNode({
+      id: '1',
+      title: 'The author',
+    })
+    tags.addNode({
+      id: '2',
+      title: 'foo',
+    })
+
+    posts.addNode({
+      id: '1',
+      title: 'A post',
+      tags: ['1'],
+    })
+
+    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+    // const collection = addCollection('Post')
+
     // 想要预渲染的数据在这里加载
     const { data } = await axios.get(
       'https://jsonplaceholder.typicode.com/posts'

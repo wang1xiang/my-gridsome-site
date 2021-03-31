@@ -9,7 +9,7 @@ const axios = require('axios')
 module.exports = function (api) {
   api.loadSource(async ({ addCollection }) => {
     const posts = addCollection('Post')
-    
+    const tags = addCollection('Tag')
     // 想要预渲染的数据在这里加载
     const { data } = await axios.get(
       'https://jsonplaceholder.typicode.com/posts'

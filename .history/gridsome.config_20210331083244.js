@@ -10,11 +10,6 @@ module.exports = {
   siteDescription: '大前端', // 对应meta标签
   plugins: [],
   templates: {
-    Post: [
-      {
-        path: '/posts/:id', // 对应gridsome.server中查询到的节点唯一键
-        component: './src/templates/Post.vue'
-      },
-    ],
-  },
+    Post
+  }
 }

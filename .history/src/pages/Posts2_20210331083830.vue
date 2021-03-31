@@ -3,7 +3,7 @@
     <div>
       <h1>Posts 2</h1>
       <ul>
-        <li v-for="edge in $page.allPost.edges" :key="edge.node.id">
+        <li v-for="edge in $page.posts.edges" :key="edge.node.id">
           <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
         </li>
       </ul>

@@ -9,12 +9,5 @@ module.exports = {
   siteName: '拉勾教育', // 网页名称
   siteDescription: '大前端', // 对应meta标签
   plugins: [],
-  templates: {
-    Post: [
-      {
-        path: '/posts/:id', // 对应gridsome.server中查询到的节点唯一键
-        component: './src/templates/Post.vue'
-      },
-    ],
-  },
+  temp
 }

@@ -12,9 +12,8 @@ module.exports = {
   templates: {
     Post: [
       {
-        path: '/posts/:id', // 对应gridsome.server中查询到的节点唯一键
-        component: './src/templates/Post.vue'
-      },
-    ],
-  },
+        path: '/posts/:id',
+      }
+    ]
+  }
 }
