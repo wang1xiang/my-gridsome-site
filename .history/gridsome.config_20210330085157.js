@@ -7,6 +7,6 @@
 
 module.exports = {
   siteName: '拉勾教育', // 网页名称
-  siteDescription: '大前端', // 对应meta标签
+  siteDescription: '大前端',
   plugins: [],
 }

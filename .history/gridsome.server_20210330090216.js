@@ -4,7 +4,7 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-const axios = require('axios')
+import axios from 'axios'
 
 module.exports = function (api) {
   api.loadSource(async ({ addCollection }) => {

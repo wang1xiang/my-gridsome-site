@@ -6,7 +6,6 @@
 // 项目配置
 
 module.exports = {
-  siteName: '拉勾教育', // 网页名称
-  siteDescription: '大前端', // 对应meta标签
-  plugins: [],
+  siteName: 'Gridsome',
+  plugins: []
 }
